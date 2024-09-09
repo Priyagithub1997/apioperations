@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "checked": true,
+      "item": "React"
+    },
+    {
+      "id": "2",
+      "checked": false,
+      "item": "hello"
+    },
+    {
+      "id": "4",
+      "checked": false,
+      "item": "css"
+    },
+    {
+      "id": "41",
+      "checked": false,
+      "item": "priya"
+    },
+    {
+      "id": "4111",
+      "checked": false,
+      "item": "hai"
+    }
+  ]
+}

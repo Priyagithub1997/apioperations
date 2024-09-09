@@ -1,0 +1,44 @@
+.list{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.list button{
+  padding: 0px 10px ;
+  max-height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+.list{
+  background-color:aliceblue;
+  width:20%;
+  padding-left: 50px;
+}
+
+.Todolist{
+  
+  margin-top:30px;
+  margin-left: 70px;
+  
+ 
+
+}
+.input{
+  margin-bottom: 20px;
+  
+}
+.input input{
+  width: 20%;
+}
+
+.search{
+  width:25%;
+  margin-bottom: 20px;
+}
+.list{
+  text-align: center;
+  
+  
+}
+
