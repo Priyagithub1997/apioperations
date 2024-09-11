@@ -9,6 +9,10 @@ function App() {
   const [newitem, setnewitem] = useState("");
   const [search, setsearch] = useState("");
   const [items, setitems] = useState([]);
+  const [read, setread] = useState(false);
+  const [checked, setchecked] = useState(true);
+
+
 
 
   useEffect(() => {
@@ -30,41 +34,9 @@ function App() {
   });
 
 
-  const handlecheck=async(id)=>{
-console.log(id);
- const listitems=items.map((item)=>item.id===id
-? {...item,checked:!item.checked}
-: item)
-
-
-setitems(listitems);
-
-const myitem=items.map(item=>(item.id===id))
-console.log(myitem[0])
-console.log(!myitem[0])
-const updateoptions = {
-  method: "PATCH",
-  headers: {
-    "Content-type": "application/json"
-  },
-  body: JSON.stringify({checked:myitem[0]})
-}
-
-const result = await apiRequest(`http://localhost:3500/items/${id}`, updateoptions)
-
-
-
-  }
-
-
-
-
-
-
-
 
   const handledelete = async (id) => {
-    
+
 
     const listitems = items.filter((item) => (item.id !== id));
     setitems(listitems);
@@ -82,16 +54,36 @@ const result = await apiRequest(`http://localhost:3500/items/${id}`, updateoptio
 
 
   }
+  const handlecheck = async(id) => {
 
+    
+    const listitems=items.map((item)=>item.id===id
+  ?{...item,checked:!item.checked} :item)
+setitems(listitems); 
+const myitem=listitems.filter(item=>(item.id===id))
+
+const updateoptions = {
+  method: "PATCH",
+  headers: {
+    "Content-type": "application/json"
+  },
+  body: JSON.stringify({checked:myitem[0].checked})
+}
+
+const result = await apiRequest(`http://localhost:3500/items/${id}`, updateoptions)
+
+
+
+  }
 
 
   const handleadd = async (newitem) => {
-   
+
 
     const id = items.length ? items[items.length - 1].id + 1 : 1;
 
 
-    const newlistitems = { id, checked: true,item:newitem }
+    const newlistitems = { id, checked: false, item:newitem }
     const listitems = [...items, newlistitems];
     console.log(listitems);
     setitems(listitems);
@@ -121,15 +113,19 @@ const result = await apiRequest(`http://localhost:3500/items/${id}`, updateoptio
   return (
     <>
       <Content
-        items={items.filter(item=>((item.item).toLowerCase().includes(search.toLowerCase())))}
+    
+       items={items.filter(item=>((item.item.toLowerCase()).includes(search.toLowerCase())))}
         setitems={setitems}
         newitem={newitem}
         setnewitem={setnewitem}
         search={search}
         setsearch={setsearch}
+        handlecheck={handlecheck}
         handleadd={handleadd}
-       handlecheck={handlecheck}
+        read={read}
+        setread={setread}
         handledelete={handledelete}
+
 
       />
 

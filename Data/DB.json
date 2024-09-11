@@ -2,28 +2,28 @@
   "items": [
     {
       "id": "1",
-      "checked": true,
-      "item": "React"
-    },
-    {
-      "id": "2",
-      "checked": false,
-      "item": "hello"
+      "item": "React",
+      "checked": true
     },
     {
       "id": "4",
-      "checked": false,
-      "item": "css"
+      "item": "css",
+      "checked": true
     },
     {
       "id": "41",
-      "checked": false,
-      "item": "priya"
+      "checked": true,
+      "item": "js"
     },
     {
       "id": "4111",
+      "checked": true,
+      "item": "siva"
+    },
+    {
+      "id": "41111",
       "checked": false,
-      "item": "hai"
+      "item": "html"
     }
   ]
 }
