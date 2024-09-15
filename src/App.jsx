@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import './App.css'
-import Content from './content';
+import Content from "./Content"
 import apiRequest from './apiRequest';
 
 
