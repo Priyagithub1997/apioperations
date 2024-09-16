@@ -17,13 +17,18 @@
     },
     {
       "id": "41111",
-      "checked": false,
+      "checked": true,
       "item": "html"
     },
     {
       "id": "411111",
       "checked": false,
       "item": "git"
+    },
+    {
+      "id": "4111111",
+      "checked": false,
+      "item": "add"
     }
   ]
 }

@@ -36,12 +36,7 @@
 
 
 }
-.content{
-  border: 2px solid black;
-  width: 30%;
-  background-color: antiquewhite;
- 
-}
+
 .Todolist{
   
   margin-top:50px;
@@ -49,6 +44,12 @@
 
   
   
+}
+.content{
+  background-color:lightblue;
+  width: 40%;
+  align-items: center;
+  padding: 10px;
 }
 
   
@@ -96,7 +97,21 @@
 
 
 
-
+@media only screen and (max-width:600px) {
+  .content{
+   
+  
+   
+    background-color:bisque;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+   
+  
+   
+  }
+  
+}
 
 
 
