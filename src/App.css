@@ -1,68 +1,71 @@
-.content{
+.content {
   display: flex;
   justify-content: center;
- border: 2px solid black;
+  border: 2px solid black;
   width: 30%;
   margin-left: 30%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 5px lightblue;
-overflow: hidden;
-padding: 20px;
+  overflow: hidden;
+  padding: 20px;
 }
 
-.inputdiv{
-background-color: rgb(193, 180, 206);
-width: 80%;
-padding: 30px;
-border-radius: 20px;
-margin-top: 10px;
-margin-bottom: 10px;
- 
+.inputdiv {
+  background-color: rgb(193, 180, 206);
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 
 }
 
-.input input{
+.input input {
   width: 60%;
-  padding:10px;
- border: 2px solid black;
- border-radius: 10px;
- margin-bottom: 10px;
- margin-right: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 
 
 
 }
-.search{
+
+.search {
   width: 100%;
-  padding:10px;
- border: 2px solid black;
- border-radius: 10px;
- 
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+
 
 
 }
-.input button{
+
+.input button {
   background-color: green;
   color: white;
   padding: 10px 10px;
   border-radius: 10px;
 
 }
-.listdiv{
+
+.listdiv {
   background-color: rgb(193, 180, 206);
   border-radius: 10px;
   margin-bottom: 10px;
- 
-  
+
+
 }
 
-.list{
+.list {
   display: flex;
   justify-content: space-evenly;
   font-size: 20px;
 }
 
-.list button{
+.list button {
   background-color: red;
   color: white;
   padding: 5px;
@@ -71,30 +74,44 @@ margin-bottom: 10px;
 
 }
 
-@media  only screen and (max-width:700px) {
-.inputdiv{
-  background-color: rgb(193, 180, 206);
+@media only screen and (max-width:700px) {
+
+  .content {
+    width: 80%;
+    margin: 0px;
+    padding: 50px;
+  }
+
+  .Todolist {
+    padding: 0px;
+  }
+
+  .inputdiv {
+    background-color: rgb(193, 180, 206);
 
 
-border-radius: 20px;
-margin-top: 10px;
-margin-bottom: 10px;
-padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
 
 
-}
-.inputdiv input{
-  width: 40%;
 
-}
-  .searchdiv{
-      
-   width: 100%;
-   
-    }
+  }
 
-    .searchdiv input{
-      width: 80%;
+  .inputdiv input {
+    width: 40%;
 
-    }
+  }
+
+  .searchdiv {
+
+    width: 100%;
+
+  }
+
+  .searchdiv input {
+    width: 80%;
+
+  }
 }
