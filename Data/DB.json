@@ -8,11 +8,11 @@
     {
       "id": "4",
       "item": "css",
-      "checked": true
+      "checked": false
     },
     {
       "id": "41",
-      "checked": true,
+      "checked": false,
       "item": "js"
     },
     {

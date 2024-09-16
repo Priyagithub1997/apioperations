@@ -1,118 +1,100 @@
+.content{
+  display: flex;
+  justify-content: center;
+ border: 2px solid black;
+  width: 30%;
+  margin-left: 30%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px lightblue;
+overflow: hidden;
+padding: 20px;
+}
 
 .inputdiv{
-  margin-left: 40px;
+background-color: rgb(193, 180, 206);
+width: 80%;
+padding: 30px;
+border-radius: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+ 
+
+}
+
+.input input{
+  width: 60%;
+  padding:10px;
+ border: 2px solid black;
+ border-radius: 10px;
+ margin-bottom: 10px;
+ margin-right: 10px;
+
+
+
+}
+.search{
   width: 100%;
+  padding:10px;
+ border: 2px solid black;
+ border-radius: 10px;
+ 
+
+
+}
+.input button{
+  background-color: green;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
 
 }
 .listdiv{
-  margin-left: 40px;
+  background-color: rgb(193, 180, 206);
+  border-radius: 10px;
+  margin-bottom: 10px;
+ 
   
+}
 
+.list{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
 
 .list button{
-  padding: 0px 10px ;
-  max-height: 30px;
-  text-align: center;
-  margin-top: 15px;
   background-color: red;
-  border-radius: 10px;
   color: white;
-  cursor: pointer;
-  
-  
-}
-.list{
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  background-color:rgb(164, 143, 223);
-  width:90%;
-  padding-left: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
+  margin: 10px 20px;
   border-radius: 10px;
-  justify-content: space-evenly;
-  font-size: 20px;
-
 
 }
 
-.Todolist{
-  
-  margin-top:50px;
-  
+@media  only screen and (max-width:700px) {
+.inputdiv{
+  background-color: rgb(193, 180, 206);
 
-  
-  
+
+border-radius: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 20px;
+
+
 }
-.content{
-  background-color:lightblue;
+.inputdiv input{
   width: 40%;
-  align-items: center;
-  padding: 10px;
-}
 
-  
- 
-
-
-.input{
-  margin-bottom: 20px;
- 
-  
 }
-.input input{
-  
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 5px;
-  width: 60%;
-}
-.input button{
-  padding: 10px 20px;
-  margin-left: 5px;
-  background-color: green;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
- 
-}
-
-.search{
-  width: 75%;
-  
-  margin-bottom: 20px;
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 5px;
-}
-.list{
-  text-align: center;
-  
-  
-}
-.list p{
-  cursor: pointer;
-}
-
-
-
-@media only screen and (max-width:600px) {
-  .content{
+  .searchdiv{
+      
+   width: 100%;
    
-  
-   
-    background-color:bisque;
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-   
-  
-   
-  }
-  
+    }
+
+    .searchdiv input{
+      width: 80%;
+
+    }
 }
-
-
-
-
