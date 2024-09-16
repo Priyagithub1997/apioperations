@@ -112,6 +112,8 @@ const result = await apiRequest(`http://localhost:3500/items/${id}`, updateoptio
 
   return (
     <>
+
+    <div className='content'>
       <Content
     
        items={items.filter(item=>((item.item.toLowerCase()).includes(search.toLowerCase())))}
@@ -128,6 +130,7 @@ const result = await apiRequest(`http://localhost:3500/items/${id}`, updateoptio
 
 
       />
+      </div>
 
 
 

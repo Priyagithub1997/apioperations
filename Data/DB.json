@@ -16,14 +16,14 @@
       "item": "js"
     },
     {
-      "id": "4111",
-      "checked": true,
-      "item": "siva"
-    },
-    {
       "id": "41111",
       "checked": false,
       "item": "html"
+    },
+    {
+      "id": "411111",
+      "checked": false,
+      "item": "git"
     }
   ]
 }

@@ -5,6 +5,7 @@ const List = ({ items, handlecheck, handledelete }) => {
     <>
 
       {items.map((item) => (
+        <div className='listdiv'>
 
         <div className='list' key={item.id}>
           <input type="checkbox"
@@ -20,7 +21,7 @@ const List = ({ items, handlecheck, handledelete }) => {
 
         </div>
 
-
+</div>
 
 
 
